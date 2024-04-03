@@ -1,0 +1,10 @@
+docker build -t just-example .
+
+docker run -p 3000:3000 just-example
+
+# on mac processor chip is arm64 but vps process chip is amd so we need to build this docker for amd chip
+
+
+docker build . --platform  linux/amd64 -t 'just example'
+
+# I have not ran cmd 'prisma generate' for genrating prisma
