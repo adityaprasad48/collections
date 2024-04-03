@@ -1,0 +1,4 @@
+psql -U <username>
+psql -U postgres
+
+CREATE DATABASE blog_nextjs_crud;
